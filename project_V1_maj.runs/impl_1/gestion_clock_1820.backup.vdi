@@ -1,0 +1,171 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Dec 13 19:30:02 2017
+# Process ID: 1436
+# Log file: C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.runs/impl_1/gestion_clock.vdi
+# Journal file: C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source gestion_clock.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc]
+WARNING: [Vivado 12-584] No ports matched 'horloge'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'horloge'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'horloge'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:10]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports horloge]'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_centre'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_centre'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_gauche'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_gauche'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_bas'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_bas'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_haut'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_haut'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_droit'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bouton_droit'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_CS'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_CS'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_MOSI'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_MOSI'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_SCK'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_SCK'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:223]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_DC'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_DC'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_RES'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_RES'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_VCCEN'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:231]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_VCCEN'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:232]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:232]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_EN'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:234]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:234]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_EN'. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:235]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.srcs/constrs_1/new/NEXYS4pasDDR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 474.715 ; gain = 256.816
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.211 . Memory (MB): peak = 477.891 ; gain = 1.723
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 60c55464
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 963.984 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 60c55464
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 963.984 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 109 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: b88901c4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 963.984 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 963.984 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: b88901c4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 963.984 ; gain = 0.000
+Implement Debug Cores | Checksum: 166caf079
+Logic Optimization | Checksum: 166caf079
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: b88901c4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 963.984 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 29 Warnings, 29 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:53 . Memory (MB): peak = 963.984 ; gain = 489.270
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/mboyer005/Desktop/voitureV1/project_V1/project_V1.runs/impl_1/gestion_clock_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan 11 19:40:06 2018
+# Process ID: 13128
+# Current directory: C:/Users/merli/Desktop/BODIN_BOYER_VHDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9540 C:\Users\merli\Desktop\BODIN_BOYER_VHDL\project_V1_maj.xpr
+# Log file: C:/Users/merli/Desktop/BODIN_BOYER_VHDL/vivado.log
+# Journal file: C:/Users/merli/Desktop/BODIN_BOYER_VHDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/merli/Desktop/project_V1_maj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 725.613 ; gain = 58.789
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 19:43:53 2018...

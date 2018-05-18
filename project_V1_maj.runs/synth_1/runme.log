@@ -1,0 +1,1092 @@
+
+*** Running vivado
+    with args -log routing.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source routing.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source routing.tcl -notrace
+Command: synth_design -top routing -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4180 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 307.086 ; gain = 83.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'routing' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:68]
+INFO: [Synth 8-3491] module 'descente' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:37' bound to instance 'inst1' of component 'descente' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'descente' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:51]
+WARNING: [Synth 8-614] signal 'etat' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'descente' (1#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:51]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BPP bound to: 16 - type: integer 
+	Parameter GREYSCALE bound to: 0 - type: bool 
+	Parameter LEFT_SIDE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'PmodOLEDrgb_bitmap' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd:46' bound to instance 'inst2' of component 'pmodoledrgb_bitmap' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:337]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDrgb_bitmap' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd:69]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BPP bound to: 16 - type: integer 
+	Parameter GREYSCALE bound to: 0 - type: bool 
+	Parameter LEFT_SIDE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDrgb_bitmap' (2#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd:69]
+INFO: [Synth 8-3491] module 'nouv_decors' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:37' bound to instance 'inst3' of component 'nouv_decors' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'nouv_decors' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:59]
+WARNING: [Synth 8-614] signal 'etat' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:78]
+WARNING: [Synth 8-4767] Trying to implement RAM 'tab_decor_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write data for RAM. 
+	2: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	3: Unable to determine number of words or word size in RAM. 
+	4: No valid read/write found for RAM. 
+RAM "tab_decor_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'nouv_decors' (3#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:59]
+INFO: [Synth 8-3491] module 'gestion_clock' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:35' bound to instance 'inst4' of component 'gestion_clock' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:376]
+INFO: [Synth 8-638] synthesizing module 'gestion_clock' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element regul_vitesse_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'gestion_clock' (4#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:49]
+INFO: [Synth 8-3491] module 'gestion_input' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:35' bound to instance 'inst5' of component 'gestion_input' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:385]
+INFO: [Synth 8-638] synthesizing module 'gestion_input' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:54]
+INFO: [Synth 8-4471] merging register 'bas_reg' into 'haut_reg' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element bas_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'gestion_input' (5#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:54]
+INFO: [Synth 8-3491] module 'coor_voiture' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:34' bound to instance 'inst6' of component 'coor_voiture' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'coor_voiture' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:48]
+WARNING: [Synth 8-614] signal 'etat' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'coor_voiture' (6#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:48]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd:36' bound to instance 'inst7' of component 'mux' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:411]
+INFO: [Synth 8-638] synthesizing module 'mux' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd:55]
+WARNING: [Synth 8-614] signal 'si_pix_col' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd:63]
+WARNING: [Synth 8-614] signal 'si_pix_row' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd:63]
+WARNING: [Synth 8-614] signal 'si_pix_data_in' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'mux' (7#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd:55]
+INFO: [Synth 8-3491] module 'menu' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd:35' bound to instance 'inst8' of component 'menu' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:428]
+INFO: [Synth 8-638] synthesizing module 'menu' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'menu' (8#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd:44]
+INFO: [Synth 8-3491] module 'game_over' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:35' bound to instance 'inst9' of component 'game_over' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:435]
+INFO: [Synth 8-638] synthesizing module 'game_over' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:47]
+WARNING: [Synth 8-614] signal 'centaine' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:228]
+WARNING: [Synth 8-614] signal 'dizaine' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:228]
+WARNING: [Synth 8-614] signal 'unite' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'game_over' (9#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:47]
+INFO: [Synth 8-3491] module 'master' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/master.vhd:38' bound to instance 'inst10' of component 'master' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:445]
+INFO: [Synth 8-638] synthesizing module 'master' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/master.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'master' (10#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/master.vhd:46]
+INFO: [Synth 8-3491] module 'PmodJSTK_Demo' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:43' bound to instance 'inst11' of component 'PmodJSTK_Demo' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:451]
+INFO: [Synth 8-638] synthesizing module 'PmodJSTK_Demo' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:57]
+INFO: [Synth 8-3491] module 'PmodJSTK' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:25' bound to instance 'PmodJSTK_Int' of component 'PmodJSTK' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'PmodJSTK' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:37]
+INFO: [Synth 8-3491] module 'spiCtrl' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:31' bound to instance 'SPI_Ctrl' of component 'spiCtrl' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'spiCtrl' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'spiCtrl' (11#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:44]
+INFO: [Synth 8-3491] module 'spiMode0' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:43' bound to instance 'SPI_Int' of component 'spiMode0' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'spiMode0' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:55]
+INFO: [Synth 8-226] default block is never used [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'spiMode0' (12#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:55]
+INFO: [Synth 8-3491] module 'ClkDiv_66_67kHz' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:24' bound to instance 'SerialClock' of component 'ClkDiv_66_67kHz' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_66_67kHz' (13#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'PmodJSTK' (14#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:37]
+INFO: [Synth 8-3491] module 'ssdCtrl' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:32' bound to instance 'DispCtrl' of component 'ssdCtrl' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'ssdCtrl' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:40]
+INFO: [Synth 8-3491] module 'Binary_To_BCD' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:33' bound to instance 'BtoBCD' of component 'Binary_To_BCD' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'Binary_To_BCD' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Binary_To_BCD' (15#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:103]
+INFO: [Synth 8-226] default block is never used [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'ssdCtrl' (16#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:40]
+INFO: [Synth 8-3491] module 'ClkDiv_5Hz' declared at 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:24' bound to instance 'genSndRec' of component 'ClkDiv_5Hz' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_5Hz' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_5Hz' (17#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'PmodJSTK_Demo' (18#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'routing' (19#1) [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd:68]
+WARNING: [Synth 8-3331] design coor_voiture has unconnected port clk_aff_voiture
+WARNING: [Synth 8-3331] design gestion_input has unconnected port bouton_h
+WARNING: [Synth 8-3331] design gestion_input has unconnected port bouton_b
+WARNING: [Synth 8-3331] design gestion_input has unconnected port clk_aff_voiture
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 423.074 ; gain = 199.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 423.074 ; gain = 199.469
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/constrs_1/new/NEXYS4pasDDR.xdc]
+Finished Parsing XDC File [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/constrs_1/new/NEXYS4pasDDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/constrs_1/new/NEXYS4pasDDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/routing_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/routing_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 757.223 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 757.223 ; gain = 533.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 757.223 ; gain = 533.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 757.223 ; gain = 533.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "PMOD_DC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PMOD_DC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PMOD_RES" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PMOD_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PMOD_VCCEN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PMOD_CS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OLED_FSM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tab_decor" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fin_game" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element obstacle_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:146]
+INFO: [Synth 8-5544] ROM "vitesse" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element compteur_raf_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:74]
+WARNING: [Synth 8-6014] Unused sequential element vitesse_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element compteur_aff_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element compteur_bouton_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element compteur_aff_voiture_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element compteur_mouv_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element cpt_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:97]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element coor_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:58]
+WARNING: [Synth 8-6014] Unused sequential element pix_data_in_menu_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element row_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd:138]
+WARNING: [Synth 8-6014] Unused sequential element col_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd:139]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[7] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[10] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[17] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[24] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[27] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[32] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[33] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[34] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[35] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[37] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[38] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[39] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[41] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[43] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[44] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[47] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[48] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[49] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[52] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[54] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[57] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[59] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_centaine_reg[60] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[7] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[10] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[17] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[24] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[27] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[32] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[33] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[34] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[35] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[37] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[38] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[39] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[41] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[43] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[44] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[47] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[48] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[49] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[52] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[54] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[57] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[59] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_dizaine_reg[60] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[7] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[10] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[17] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[24] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[27] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[32] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[33] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[34] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[35] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[37] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[38] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[39] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[41] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[43] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[44] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[47] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[48] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[49] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[52] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[54] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[57] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[59] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element mem_unite_reg[60] was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+INFO: [Synth 8-5544] ROM "X_unite" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element row_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:277]
+WARNING: [Synth 8-6014] Unused sequential element col_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:278]
+WARNING: [Synth 8-6014] Unused sequential element compt_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:280]
+WARNING: [Synth 8-6014] Unused sequential element X_unite_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:284]
+WARNING: [Synth 8-6014] Unused sequential element X_dizaine_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:288]
+WARNING: [Synth 8-6014] Unused sequential element X_centaine_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:292]
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'spiCtrl'
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:71]
+INFO: [Synth 8-5544] ROM "NSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clkCount_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:54]
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'Binary_To_BCD'
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:68]
+INFO: [Synth 8-5544] ROM "NSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clkCount_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:188]
+WARNING: [Synth 8-6014] Unused sequential element clkCount_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[1]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[2]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[3]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[4]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[5]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[6]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[8]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[9]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[11]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[12]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[13]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[14]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[15]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[16]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[18]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[19]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[20]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[21]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[22]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[23]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[25]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[26]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[28]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[29]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[30]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[31]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[36]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[40]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[42]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[45]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[46]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[50]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[51]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[53]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[55]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[56]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[58]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[61]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[62]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_centaine_reg[63]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[1]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[2]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[3]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[4]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[5]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[6]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[8]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[9]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[11]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[12]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[13]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[14]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[15]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[16]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[18]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[19]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[20]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[21]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[22]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[23]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[25]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[26]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[28]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[29]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[30]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[31]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[36]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[40]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[42]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[45]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[46]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[50]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[51]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[53]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[55]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[56]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[58]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[61]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[62]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_dizaine_reg[63]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[1]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[2]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[3]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[4]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[5]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[6]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[8]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[9]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[11]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[12]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[13]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[14]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[15]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[16]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[18]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[19]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_unite_reg[20]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd:261]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:71]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                              000 |                              000
+                  stinit |                              001 |                              001
+                  stwait |                              010 |                              010
+                 stcheck |                              011 |                              011
+                  stdone |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'spiCtrl'
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:68]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    init |                              001 |                              001
+                   shift |                              010 |                              010
+                   check |                              011 |                              011
+                    done |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'Binary_To_BCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 757.223 ; gain = 533.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 8     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 13    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	               13 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 14    
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 99    
+	                1 Bit    Registers := 27    
++---RAMs : 
+	              96K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input    192 Bit        Muxes := 2     
+	   5 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     28 Bit        Muxes := 2     
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	  11 Input     16 Bit        Muxes := 123   
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 18    
+	  12 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 204   
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 76    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	  11 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module descente 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PmodOLEDrgb_bitmap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              96K Bit         RAMs := 1     
++---Muxes : 
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  32 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module nouv_decors 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                2 Bit    Registers := 96    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    192 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 16    
+	   2 Input      2 Bit        Muxes := 201   
+	   2 Input      1 Bit        Muxes := 34    
+Module gestion_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module gestion_input 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module coor_voiture 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module game_over 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	  11 Input     16 Bit        Muxes := 123   
+	   2 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 3     
+Module master 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module spiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   5 Input     40 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module spiMode0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module ClkDiv_66_67kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module Binary_To_BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     28 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module ssdCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module ClkDiv_5Hz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PmodJSTK_Demo 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'x0_reg[6:0]' into 'x0_reg[6:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:73]
+INFO: [Synth 8-4471] merging register 'y0_reg[7:0]' into 'y0_reg[7:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd:74]
+INFO: [Synth 8-4471] merging register 'coorX_reg[3:0]' into 'coorX_reg[3:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:95]
+INFO: [Synth 8-4471] merging register 'coorY_reg[3:0]' into 'coorY_reg[3:0]' [C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:96]
+INFO: [Synth 8-5546] ROM "inst2/OLED_FSM" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design routing has unconnected port bouton_haut
+WARNING: [Synth 8-3331] design routing has unconnected port bouton_bas
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[63][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[62][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[61][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[58][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[56][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[55][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[53][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[51][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[50][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[46][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[45][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[42][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[40][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[36][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[31][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[30][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[29][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[28][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[26][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[25][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[23][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[22][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[21][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[20][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[19][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[18][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[16][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[15][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[14][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[13][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[12][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[11][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[9][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[8][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[6][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[5][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[4][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[3][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[2][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[1][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_unite_reg[0][0]' (LD) to 'inst9/mem_unite_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[63][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[62][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[61][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[58][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[56][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[55][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[53][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[51][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[50][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[46][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[45][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[42][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[40][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[36][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[31][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[30][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[29][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[28][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[26][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[25][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[23][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[22][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[21][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[20][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[19][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[18][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[16][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[15][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[14][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[13][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[12][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[11][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[9][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[8][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[6][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[5][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[4][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[3][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[2][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[1][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_dizaine_reg[0][0]' (LD) to 'inst9/mem_dizaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[63][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[62][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[61][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[58][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[56][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[55][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[53][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[51][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[50][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[46][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[45][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[42][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[40][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[36][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[31][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[30][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[29][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'inst9/mem_centaine_reg[28][0]' (LD) to 'inst9/mem_centaine_reg[63][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst9/\mem_unite_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst9/\mem_dizaine_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst9/\mem_centaine_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst1/\pix_data_in_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst4/vitesse_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst4/vitesse_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst4/vitesse_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst4/vitesse_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\inst4/vitesse_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst1/\y0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst11/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst2/write_dly_reg )
+WARNING: [Synth 8-3332] Sequential element (pix_data_in_reg[8]) is unused and will be removed from module descente.
+WARNING: [Synth 8-3332] Sequential element (y0_reg[1]) is unused and will be removed from module descente.
+WARNING: [Synth 8-3332] Sequential element (X_centaine_reg[6]) is unused and will be removed from module game_over.
+WARNING: [Synth 8-3332] Sequential element (X_dizaine_reg[6]) is unused and will be removed from module game_over.
+WARNING: [Synth 8-3332] Sequential element (X_unite_reg[6]) is unused and will be removed from module game_over.
+WARNING: [Synth 8-3332] Sequential element (mem_unite_reg[0][7]) is unused and will be removed from module game_over.
+WARNING: [Synth 8-3332] Sequential element (mem_dizaine_reg[0][7]) is unused and will be removed from module game_over.
+WARNING: [Synth 8-3332] Sequential element (mem_centaine_reg[0][7]) is unused and will be removed from module game_over.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/sndData_reg[6]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[31]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[30]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[29]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[28]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[27]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[26]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[15]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[14]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[13]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[12]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[11]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[10]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[7]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[6]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[5]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[4]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst11/PmodJSTK_Int/SPI_Ctrl/DOUT_reg[3]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst2/write_dly_reg) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst4/vitesse_reg[0]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst4/vitesse_reg[1]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst4/vitesse_reg[2]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst4/vitesse_reg[3]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (inst4/vitesse_reg[4]) is unused and will be removed from module routing.
+WARNING: [Synth 8-3332] Sequential element (coorX_reg[3]) is unused and will be removed from module nouv_decors.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 757.223 ; gain = 533.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------+----------------------------+---------------+----------------+
+|Module Name        | RTL Object                 | Depth x Width | Implemented As | 
++-------------------+----------------------------+---------------+----------------+
+|PmodOLEDrgb_bitmap | OLED_FSM                   | 32x5          | LUT            | 
+|menu               | pix_data_in_menu_reg       | 8192x16       | Block RAM      | 
+|game_over          | memory[0]                  | 8192x16       | LUT            | 
+|game_over          | memory[0]                  | 8192x16       | LUT            | 
+|routing            | inst2/OLED_FSM             | 32x5          | LUT            | 
+|routing            | inst8/pix_data_in_menu_reg | 8192x16       | Block RAM      | 
++-------------------+----------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|PmodOLEDrgb_bitmap: | bitmap_reg | 8 K x 16(READ_FIRST)   | W | R | 8 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++--------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 811.125 ; gain = 587.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 827.703 ; gain = 604.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst2/bitmap_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst2/bitmap_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst2/bitmap_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst2/bitmap_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst8/pix_data_in_menu_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst8/pix_data_in_menu_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst8/pix_data_in_menu_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst8/pix_data_in_menu_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |   171|
+|3     |LUT1       |   380|
+|4     |LUT2       |   289|
+|5     |LUT3       |   355|
+|6     |LUT4       |   320|
+|7     |LUT5       |   499|
+|8     |LUT6       |  1595|
+|9     |MUXF7      |   118|
+|10    |MUXF8      |    33|
+|11    |RAMB36E1   |     4|
+|12    |RAMB36E1_1 |     1|
+|13    |RAMB36E1_2 |     1|
+|14    |RAMB36E1_3 |     1|
+|15    |RAMB36E1_4 |     1|
+|16    |FDCE       |   190|
+|17    |FDC_1      |     3|
+|18    |FDPE       |     2|
+|19    |FDRE       |   810|
+|20    |FDSE       |     9|
+|21    |LD         |   125|
+|22    |IBUF       |     9|
+|23    |OBUF       |    24|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------+-------------------+------+
+|      |Instance          |Module             |Cells |
++------+------------------+-------------------+------+
+|1     |top               |                   |  4945|
+|2     |  inst1           |descente           |   601|
+|3     |  inst10          |master             |    62|
+|4     |  inst11          |PmodJSTK_Demo      |   461|
+|5     |    DispCtrl      |ssdCtrl            |   177|
+|6     |      BtoBCD      |Binary_To_BCD      |   117|
+|7     |    PmodJSTK_Int  |PmodJSTK           |   218|
+|8     |      SPI_Ctrl    |spiCtrl            |   149|
+|9     |      SPI_Int     |spiMode0           |    43|
+|10    |      SerialClock |ClkDiv_66_67kHz    |    26|
+|11    |    genSndRec     |ClkDiv_5Hz         |    63|
+|12    |  inst2           |PmodOLEDrgb_bitmap |   264|
+|13    |  inst3           |nouv_decors        |  1067|
+|14    |  inst4           |gestion_clock      |   478|
+|15    |  inst5           |gestion_input      |    96|
+|16    |  inst6           |coor_voiture       |    21|
+|17    |  inst7           |mux                |    30|
+|18    |  inst8           |menu               |   102|
+|19    |  inst9           |game_over          |  1725|
++------+------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 886.824 ; gain = 663.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 298 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:01:40 . Memory (MB): peak = 886.824 ; gain = 329.070
+Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:01:50 . Memory (MB): peak = 886.824 ; gain = 663.219
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 316 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  FDC_1 => FDCE (inverted pins: C): 3 instances
+  LD => LDCE: 125 instances
+
+233 Infos, 249 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:55 . Memory (MB): peak = 886.824 ; gain = 671.133
+INFO: [Common 17-1381] The checkpoint 'C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.runs/synth_1/routing.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 886.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 20:41:27 2018...

@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan 11 18:14:47 2018
+# Process ID: 12236
+# Current directory: C:/Users/merli/Desktop/BODIN_BOYER_VHDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2452 C:\Users\merli\Desktop\BODIN_BOYER_VHDL\project_V1_maj.xpr
+# Log file: C:/Users/merli/Desktop/BODIN_BOYER_VHDL/vivado.log
+# Journal file: C:/Users/merli/Desktop/BODIN_BOYER_VHDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/merli/Desktop/project_V1_maj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 745.051 ; gain = 94.379
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: routing
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 793.301 ; gain = 42.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'routing' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:68]
+INFO: [Synth 8-3491] module 'descente' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/descente.vhd:37' bound to instance 'inst1' of component 'descente' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'descente' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/descente.vhd:51]
+WARNING: [Synth 8-614] signal 'etat' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/descente.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'descente' (1#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/descente.vhd:51]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BPP bound to: 16 - type: integer 
+	Parameter GREYSCALE bound to: 0 - type: bool 
+	Parameter LEFT_SIDE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'PmodOLEDrgb_bitmap' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd:46' bound to instance 'inst2' of component 'pmodoledrgb_bitmap' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:337]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDrgb_bitmap' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd:69]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BPP bound to: 16 - type: integer 
+	Parameter GREYSCALE bound to: 0 - type: bool 
+	Parameter LEFT_SIDE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDrgb_bitmap' (2#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd:69]
+INFO: [Synth 8-3491] module 'nouv_decors' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:37' bound to instance 'inst3' of component 'nouv_decors' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'nouv_decors' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:59]
+WARNING: [Synth 8-614] signal 'etat' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:78]
+WARNING: [Synth 8-4767] Trying to implement RAM 'tab_decor_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Invalid write data for RAM. 
+	2: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	3: Unable to determine number of words or word size in RAM. 
+	4: No valid read/write found for RAM. 
+RAM "tab_decor_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'nouv_decors' (3#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd:59]
+INFO: [Synth 8-3491] module 'gestion_clock' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:35' bound to instance 'inst4' of component 'gestion_clock' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:376]
+INFO: [Synth 8-638] synthesizing module 'gestion_clock' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element regul_vitesse_reg was removed.  [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'gestion_clock' (4#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd:49]
+INFO: [Synth 8-3491] module 'gestion_input' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:35' bound to instance 'inst5' of component 'gestion_input' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:385]
+INFO: [Synth 8-638] synthesizing module 'gestion_input' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:54]
+INFO: [Synth 8-4471] merging register 'bas_reg' into 'haut_reg' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element bas_reg was removed.  [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'gestion_input' (5#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/gestion_input.vhd:54]
+INFO: [Synth 8-3491] module 'coor_voiture' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:34' bound to instance 'inst6' of component 'coor_voiture' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'coor_voiture' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:48]
+WARNING: [Synth 8-614] signal 'etat' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'coor_voiture' (6#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd:48]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/mux.vhd:36' bound to instance 'inst7' of component 'mux' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:411]
+INFO: [Synth 8-638] synthesizing module 'mux' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/mux.vhd:55]
+WARNING: [Synth 8-614] signal 'si_pix_col' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/mux.vhd:63]
+WARNING: [Synth 8-614] signal 'si_pix_row' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/mux.vhd:63]
+WARNING: [Synth 8-614] signal 'si_pix_data_in' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/mux.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'mux' (7#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/mux.vhd:55]
+INFO: [Synth 8-3491] module 'menu' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/menu.vhd:35' bound to instance 'inst8' of component 'menu' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:428]
+INFO: [Synth 8-638] synthesizing module 'menu' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/menu.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'menu' (8#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/menu.vhd:44]
+INFO: [Synth 8-3491] module 'game_over' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/game_over.vhd:35' bound to instance 'inst9' of component 'game_over' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:435]
+INFO: [Synth 8-638] synthesizing module 'game_over' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/game_over.vhd:47]
+WARNING: [Synth 8-614] signal 'centaine' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/game_over.vhd:228]
+WARNING: [Synth 8-614] signal 'dizaine' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/game_over.vhd:228]
+WARNING: [Synth 8-614] signal 'unite' is read in the process but is not in the sensitivity list [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/game_over.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'game_over' (9#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/game_over.vhd:47]
+INFO: [Synth 8-3491] module 'master' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/master.vhd:38' bound to instance 'inst10' of component 'master' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:445]
+INFO: [Synth 8-638] synthesizing module 'master' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/master.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'master' (10#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/master.vhd:46]
+INFO: [Synth 8-3491] module 'PmodJSTK_Demo' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:43' bound to instance 'inst11' of component 'PmodJSTK_Demo' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:451]
+INFO: [Synth 8-638] synthesizing module 'PmodJSTK_Demo' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:57]
+INFO: [Synth 8-3491] module 'PmodJSTK' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:25' bound to instance 'PmodJSTK_Int' of component 'PmodJSTK' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'PmodJSTK' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:37]
+INFO: [Synth 8-3491] module 'spiCtrl' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:31' bound to instance 'SPI_Ctrl' of component 'spiCtrl' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'spiCtrl' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'spiCtrl' (11#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd:44]
+INFO: [Synth 8-3491] module 'spiMode0' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:43' bound to instance 'SPI_Int' of component 'spiMode0' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'spiMode0' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:55]
+INFO: [Synth 8-226] default block is never used [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'spiMode0' (12#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd:55]
+INFO: [Synth 8-3491] module 'ClkDiv_66_67kHz' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:24' bound to instance 'SerialClock' of component 'ClkDiv_66_67kHz' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_66_67kHz' (13#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'PmodJSTK' (14#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd:37]
+INFO: [Synth 8-3491] module 'ssdCtrl' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:32' bound to instance 'DispCtrl' of component 'ssdCtrl' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'ssdCtrl' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:40]
+INFO: [Synth 8-3491] module 'Binary_To_BCD' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:33' bound to instance 'BtoBCD' of component 'Binary_To_BCD' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'Binary_To_BCD' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Binary_To_BCD' (15#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:103]
+INFO: [Synth 8-226] default block is never used [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'ssdCtrl' (16#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd:40]
+INFO: [Synth 8-3491] module 'ClkDiv_5Hz' declared at 'C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:24' bound to instance 'genSndRec' of component 'ClkDiv_5Hz' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_5Hz' [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_5Hz' (17#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'PmodJSTK_Demo' (18#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'routing' (19#1) [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/sources_1/new/routing.vhd:68]
+WARNING: [Synth 8-3331] design coor_voiture has unconnected port clk_aff_voiture
+WARNING: [Synth 8-3331] design gestion_input has unconnected port bouton_h
+WARNING: [Synth 8-3331] design gestion_input has unconnected port bouton_b
+WARNING: [Synth 8-3331] design gestion_input has unconnected port clk_aff_voiture
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 899.895 ; gain = 148.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 899.895 ; gain = 148.738
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/constrs_1/new/NEXYS4pasDDR.xdc]
+Finished Parsing XDC File [C:/Users/merli/Desktop/BODIN_BOYER_VHDL/project_V1_maj.srcs/constrs_1/new/NEXYS4pasDDR.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.793 ; gain = 509.637
+64 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1260.793 ; gain = 509.637
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 18:20:20 2018...

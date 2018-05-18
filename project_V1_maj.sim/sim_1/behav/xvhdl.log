@@ -1,0 +1,44 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/Binary_To_BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Binary_To_BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_5Hz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ClkDiv_5Hz
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ClkDiv_66_67kHz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ClkDiv_66_67kHz
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodJSTK
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spiCtrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/spiMode0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spiMode0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/ssdCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ssdCtrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/imports/PmodJSTK_Demo/PmodJSTK_Demo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodJSTK_Demo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/coor_voiture.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity coor_voiture
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/descente.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity descente
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/game_over.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity game_over
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gestion_clock
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/gestion_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gestion_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity master
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/menu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity menu
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/nouv_decors.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity nouv_decors
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/pmodoledrgb_bitmap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodOLEDrgb_bitmap
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sources_1/new/routing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity routing
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sim_1/new/tb_gestion_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gestion_input_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sim_1/new/tb_gestion_clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gestion_clock_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/merli/Desktop/project_V1_maj/project_V1_maj.srcs/sim_1/new/TB_coor_voiture.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity coor_voiture_tb
